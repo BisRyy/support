@@ -51,7 +51,7 @@ By adhering to these guidelines, you will ensure a high-quality support experien
 
 export async function POST(req) {
   const groq = new Groq({
-    apiKey: "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",
+    apiKey: process.env.GROQ_API_KEY,
   });
 
   const data = await req.json();
